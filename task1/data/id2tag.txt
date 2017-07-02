@@ -1,0 +1,4 @@
+synonym	50
+hyponym	50
+antonym	50
+meronym	50

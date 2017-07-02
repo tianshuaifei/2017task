@@ -1,0 +1,32 @@
+[General]
+train_data = ./data/char/train.txt
+val_data = ./data/char/dev.txt
+test_data = ./data/char/test.txt
+vocab_path = ./data/char/vocab.txt
+id2tag_path = ./data/char/id2tag.txt
+embed_path = ./data/embed/embedding.
+neural_model = lstm_basic
+pre_trained = False
+vocab_size = 100000
+batch_size = 64
+embed_size = 200
+max_epochs = 50
+early_stopping = 5
+dropout = 0.9
+lr = 0.001
+decay_steps = 500
+decay_rate = 0.9
+class_num = 18
+reg = 1e-3
+num_steps = 40
+fnn_numlayers = 1
+
+[lstm]
+hidden_size = 300
+rnn_numlayers = 1
+
+[cnn]
+num_filters = 128
+filter_sizes = [3, 4,5]
+cnn_numlayers = 1
+
